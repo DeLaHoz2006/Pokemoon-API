@@ -1,0 +1,127 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navi {
+    display: flex;
+}
+
+.navi-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navi-magazin {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: #d53835;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 0px 50px;
+}
+
+.navi-magazin svg {
+    transform: scale(1.6);
+    fill: white;
+    width: 30px;
+}
+
+.navi-search {
+    margin: 50px 0px 0px 0px;
+}
+
+.navi-search input[type="text"] {
+    padding: 17.5px;
+    background-color: #ebebeb;
+}
+
+.navi-search input::placeholder {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 23px;
+    color: rgba(128, 128, 128, 0.575);
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navi-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0px 0px 15px;
+}
+
+.btn {
+    padding: 17px;
+    background: #d53835;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Fondo oscuro */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.562);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+/* Caja emergente */
+.popup {
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup li {
+    margin: 10px 0;
+}
+
+.popup a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.cerrar {
+    margin-top: 15px;
+    padding: 8px 12px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Clase para mostrar el popup */
+.mostrar {
+    display: flex;
+}
