@@ -5,10 +5,14 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .navi {
     display: flex;
+    margin-left: -10px;
 }
 
 .navi-content {
@@ -16,7 +20,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
 }
 
 .navi-magazin {
@@ -70,9 +73,9 @@
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 14px;
 }
 
-/* Fondo oscuro */
 .overlay {
     display: none;
     position: fixed;
@@ -83,9 +86,8 @@
     backdrop-filter: blur(4px);
 }
 
-/* Caja emergente */
 .popup {
-    background: rgba(255, 255, 255, 0);
+    background: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
     width: 300px;
@@ -103,25 +105,41 @@
 
 .popup li {
     margin: 10px 0;
+    background-color: #d53835;
+    width: fit-content;
+    display: inline-flex;
+    flex-wrap: wrap;
+    border-radius: 75px;
+    align-items: center;
+    justify-content: center;
 }
 
 .popup a {
     text-decoration: none;
-    color: #2563eb;
+    color: white;
     font-weight: bold;
+    padding: 20px;
+
+    transition: all 0.3s;
 }
 
-.cerrar {
+.popup a:active{
+    color: #dc2626;
+    background-color: white;
+    transform: scale(1.2);
+}
+
+.close {
     margin-top: 15px;
     padding: 8px 12px;
-    background: #dc2626;
-    color: white;
-    border: none;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px dashed black;
     border-radius: 6px;
     cursor: pointer;
 }
 
-/* Clase para mostrar el popup */
 .mostrar {
     display: flex;
 }
+
